@@ -25,7 +25,6 @@ const FooterElement = styled.footer(
 const Wrapper = styled.div(
   () => css`
     max-width: 980px;
-    padding: 0rem 2rem;
     z-index: 1;
   `
 );
