@@ -47,7 +47,7 @@ export default function Output({ wordToSpell }) {
 
   return (
     <OutputWrapper>
-      <Label>Here is how to spell</Label>
+      <Label>Here‘s how to spell</Label>
       <TextWrapper>
         {letter?.map((el, index) => (
           <span key={index}>

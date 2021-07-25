@@ -67,12 +67,12 @@ export default function Footer() {
           automate the process to transform what I want to spell to the NATO
           format.
         </Text>
-        <Label color="white">What's NATO?</Label>
+        <Label color="white">What‘s NATO?</Label>
         <Text>
           The NATO phonetic alphabet is a Spelling Alphabet, a set of words used
           instead of letters in oral communication (i.e. over the phone or
-          military radio). Each word ("code word") stands for its initial letter
-          (alphabetical "symbol").
+          military radio). Each word {"code word"} stands for its initial letter
+          (alphabetical {"symbol"}).
         </Text>
         <CopyRight>
           Made with <HeartIcon /> by{" "}
