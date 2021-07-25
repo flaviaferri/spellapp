@@ -22,21 +22,24 @@ const Word = styled.p(
   `
 );
 
-export default function SpellHandler({ wordToSpell }) {
-  const arrayWord = wordToSpell.normalize("NFD").toLowerCase().split("");
+const handleSpecialCharacteres = (word) =>
+  word.normalize("NFD").replace(/[^a-zA-Zs0-9 ]/g, "");
+
+export default function Output({ wordToSpell }) {
+  const arrayWord = handleSpecialCharacteres(wordToSpell)
+    .toLowerCase()
+    .split("");
 
   // o ponto de interrogracao eh para fazer a verificacao se todos os dados existem. (optional chaining)
-  var letter = arrayWord?.map((e) => {
-    if (e === " ")
-      return {
-        word: " ",
-      };
+  const letter = arrayWord?.map((e) => {
+    if (e === " ") return { word: " " };
+
     return natoAlphabet.find((element) => element.letter == e);
   });
 
   return (
     <>
-      <Label>Here's how to spell</Label>
+      <Label>Here is how to spell</Label>
       <TextWrapper>
         {letter?.map((el, index) => (
           <span key={index}>
@@ -46,7 +49,7 @@ export default function SpellHandler({ wordToSpell }) {
                 <br />
               </span>
             ) : (
-              <Word>{el.word}</Word>
+              <Word>{el.word} </Word>
             )}{" "}
           </span>
         ))}
