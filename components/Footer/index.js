@@ -13,11 +13,11 @@ const FooterElement = styled.footer(
     background-image: url("/backgroundFooter.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     padding: 20rem 3rem 0 3rem;
 
     ${theme.breakpoints[1]} {
-      padding: 10rem 3rem 0 3rem;
+      padding: 12rem 3rem 0 3rem;
     }
   `
 );
