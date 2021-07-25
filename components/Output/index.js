@@ -6,8 +6,10 @@ import styled from "@emotion/styled";
 import Label from "../Label";
 
 const OutputWrapper = styled.section(
-  () => css`
-    flex-direction: column;
+  ({ theme }) => css`
+    ${theme.breakpoints[1]} {
+      width: 50%;
+    }
   `
 );
 

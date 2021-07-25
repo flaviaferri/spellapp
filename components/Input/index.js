@@ -4,10 +4,15 @@ import styled from "@emotion/styled";
 import Label from "../Label";
 
 const WrapperInput = styled.div(
-  () => css`
+  ({ theme }) => css`
     display: flex;
     flex-direction: column;
     margin-bottom: 1.8rem;
+
+    ${theme.breakpoints[1]} {
+      width: 50%;
+      margin-right: 7.7rem;
+    }
   `
 );
 

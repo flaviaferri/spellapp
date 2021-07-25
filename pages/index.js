@@ -8,8 +8,17 @@ import Output from "../components/Output";
 import Logo from "../components/Logo";
 
 const Wrapper = styled.section(
-  () => css`
+  ({ theme }) => css`
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    ${theme.breakpoints[1]} {
+      flex-direction: row;
+      justify-content: space-evenly;
+      max-width: 1280px;
+      margin: auto;
+    }
   `
 );
 
