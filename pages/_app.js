@@ -10,6 +10,7 @@ const style = css`
     font-family: "Nunito", sans-serif;
     font-size: 10px;
     box-sizing: border-box;
+    background-color: #f9f9f9;
   }
 
   * {

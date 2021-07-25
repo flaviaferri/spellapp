@@ -5,25 +5,22 @@ import styled from "@emotion/styled";
 import Label from "../Label";
 
 const FooterElement = styled.footer(
-  ({ theme }) => css`
+  () => css`
     background-image: url("/backgroundFooter.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 48rem;
-    background-position: center;
+    background-position: center top;
     display: flex;
-    align-items: flex-end;
-
-    ${theme.breakpoints[1]} {
-      height: 41rem;
-    }
+    align-items: center;
+    justify-content: center;
   `
 );
 
 const Wrapper = styled.div(
-  ({ theme }) => css`
+  () => css`
     max-width: 1280px;
-    padding: 2rem;
+    padding: 9rem 2rem;
+    margin-top: 5rem;
   `
 );
 
@@ -43,9 +40,9 @@ export default function Footer() {
         <Label color="white">Why I built this?</Label>
         <Text>
           I’m a Brazilian living in the Netherlands that always struggles to
-          spell my Dutch address, name, and personal through the phone making
-          the person on the other side of the line suffer. I discovered NATO
-          phonetic alphabet is a awesome way to spell things and decided to
+          spell my address, name, and personal through the phone making the
+          person on the other side of the line suffer. I discovered NATO
+          phonetic alphabet is an awesome way to spell things and decided to
           automate the process to transform what I want to spell to the NATO
           format.
         </Text>
