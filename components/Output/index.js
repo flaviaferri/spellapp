@@ -5,6 +5,12 @@ import styled from "@emotion/styled";
 
 import Label from "../Label";
 
+const OutputWrapper = styled.section(
+  () => css`
+    flex-direction: column;
+  `
+);
+
 const TextWrapper = styled.div(
   () => css`
     font-size: 1.8rem;
@@ -38,7 +44,7 @@ export default function Output({ wordToSpell }) {
   });
 
   return (
-    <>
+    <OutputWrapper>
       <Label>Here is how to spell</Label>
       <TextWrapper>
         {letter?.map((el, index) => (
@@ -54,6 +60,6 @@ export default function Output({ wordToSpell }) {
           </span>
         ))}
       </TextWrapper>
-    </>
+    </OutputWrapper>
   );
 }

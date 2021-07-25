@@ -25,12 +25,19 @@ const TextArea = styled.textarea(
 );
 
 export default function Input({ handleChange, wordToSpell }) {
+  const handleEnter = (e) => {
+    if (event.key === "Enter") {
+      return handleChange(`${e.target.defaultValue} `);
+    }
+  };
+
   return (
     <>
       <WrapperInput>
         <Label>Type what you want to spell</Label>
         <TextArea
           onChange={(e) => handleChange(e.target.value)}
+          onKeyDown={handleEnter}
           value={wordToSpell}
         />
       </WrapperInput>
