@@ -29,9 +29,10 @@ export default function Input({ handleChange, wordToSpell }) {
     <>
       <WrapperInput>
         <Label>Type what you want to spell</Label>
-        <TextArea onChange={(e) => handleChange(e.target.value)}>
-          {wordToSpell}
-        </TextArea>
+        <TextArea
+          onChange={(e) => handleChange(e.target.value)}
+          value={wordToSpell}
+        />
       </WrapperInput>
     </>
   );

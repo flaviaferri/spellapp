@@ -22,11 +22,11 @@ const Word = styled.p(
   `
 );
 
-const handleSpecialCharacteres = (word) =>
+const handleSpecialCharacters = (word) =>
   word.normalize("NFD").replace(/[^a-zA-Zs0-9 ]/g, "");
 
 export default function Output({ wordToSpell }) {
-  const arrayWord = handleSpecialCharacteres(wordToSpell)
+  const arrayWord = handleSpecialCharacters(wordToSpell)
     .toLowerCase()
     .split("");
 
