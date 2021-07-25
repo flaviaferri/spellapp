@@ -45,7 +45,7 @@ export default function Home() {
           name="description"
           content="NATO phonetic alphabet online translator made by Flavia Ferri"
         />
-        <link rel="shortcut icon" href="/fav.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
 
       <Logo />
