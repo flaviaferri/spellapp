@@ -4,10 +4,10 @@ import { theme } from "../styles/theme";
 import { ThemeProvider } from "@emotion/react";
 
 const style = css`
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,400&display=swap");
 
   html {
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 10px;
     box-sizing: border-box;
   }

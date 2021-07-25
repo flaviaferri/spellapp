@@ -1,8 +1,17 @@
 import { useState } from "react";
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 import Head from "next/head";
+
 import Input from "../components/Input";
-import SpellHandler from "../components/SpellHandler";
+import Output from "../components/Output";
 import Logo from "../components/Logo";
+
+const Wrapper = styled.section(
+  () => css`
+    padding: 2rem;
+  `
+);
 
 export default function Home() {
   const [wordToSpell, setWordToSpell] = useState("");
@@ -16,11 +25,11 @@ export default function Home() {
 
       <Logo />
 
-      <main>
+      <Wrapper>
         <Input handleChange={setWordToSpell} wordToSpell={wordToSpell} />
 
-        <SpellHandler wordToSpell={wordToSpell} />
-      </main>
+        <Output wordToSpell={wordToSpell} />
+      </Wrapper>
     </div>
   );
 }
