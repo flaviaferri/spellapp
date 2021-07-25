@@ -13,7 +13,7 @@ const LogoWrapper = styled.div(
 );
 
 const Title = styled.h1(
-  ({ theme, color }) => css`
+  ({ theme }) => css`
     font-size: 2.5rem;
     color: ${theme.colors.black};
     font-weight: 800;
