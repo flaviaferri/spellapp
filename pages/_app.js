@@ -8,7 +8,7 @@ const style = css`
 
   html {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     box-sizing: border-box;
   }
 
