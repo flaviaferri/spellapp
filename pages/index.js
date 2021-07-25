@@ -6,6 +6,7 @@ import Head from "next/head";
 import Input from "../components/Input";
 import Output from "../components/Output";
 import Logo from "../components/Logo";
+import Footer from "../components/Footer";
 
 const Wrapper = styled.section(
   ({ theme }) => css`
@@ -39,6 +40,7 @@ export default function Home() {
 
         <Output wordToSpell={wordToSpell} />
       </Wrapper>
+      <Footer />
     </div>
   );
 }
