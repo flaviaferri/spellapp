@@ -5,8 +5,19 @@ import styled from "@emotion/styled";
 const LogoWrapper = styled.div(
   () => css`
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 2.5rem;
+    align-items: center;
+    padding: 5rem 2.5rem 0;
+  `
+);
+
+const Title = styled.h1(
+  ({ theme, color }) => css`
+    font-size: 2.5rem;
+    color: ${theme.colors.black};
+    font-weight: 800;
+    margin: 5rem 0 0;
   `
 );
 
@@ -74,6 +85,7 @@ function Logo(props) {
           </clipPath>
         </defs>
       </svg>
+      <Title>NATO phonetic alphabet online translator</Title>
     </LogoWrapper>
   );
 }

@@ -26,6 +26,10 @@ const TextArea = styled.textarea(
     font-size: 1.6rem;
     font-weight: 500;
     resize: none;
+
+    ${theme.breakpoints[1]} {
+      min-height: 30vh;
+    }
   `
 );
 

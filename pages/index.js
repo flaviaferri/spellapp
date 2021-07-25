@@ -9,7 +9,7 @@ import Logo from "../components/Logo";
 import Footer from "../components/Footer";
 
 const Page = styled.main(
-  ({ theme }) => css`
+  () => css`
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -18,7 +18,7 @@ const Page = styled.main(
 
 const Wrapper = styled.section(
   ({ theme }) => css`
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -28,7 +28,7 @@ const Wrapper = styled.section(
       flex-direction: row;
       justify-content: space-evenly;
       max-width: 980px;
-      margin: auto;
+      margin: 7.5rem auto;
     }
   `
 );
