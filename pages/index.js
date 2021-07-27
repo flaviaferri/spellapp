@@ -13,7 +13,7 @@ const Output = dynamic(() => import("../components/Output"), {
 const Logo = dynamic(() => import("../components/Logo"), {
   ssr: false,
 });
-const Footer = dynamic(() => import("../components/Logo"), {
+const Footer = dynamic(() => import("../components/Footer"), {
   ssr: false,
 });
 
