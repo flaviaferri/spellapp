@@ -15,17 +15,14 @@ const FooterElement = styled.footer(
     background-repeat: no-repeat;
     background-position: center top;
     padding: 20rem 3rem 0 3rem;
-
-    ${theme.breakpoints[1]} {
-      padding: 12rem 3rem 0 3rem;
-    }
   `
 );
 
 const Wrapper = styled.div(
-  () => css`
+  ({ theme }) => css`
     max-width: 980px;
     z-index: 1;
+    background-color: ${theme.colors.purple};
   `
 );
 
