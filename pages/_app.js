@@ -2,13 +2,14 @@ import "reset-css";
 import { Global, css } from "@emotion/react";
 import { theme } from "../styles/theme";
 import { ThemeProvider } from "@emotion/react";
+import "@fontsource/nunito";
+import "@fontsource/nunito/300.css";
+import "@fontsource/nunito/400.css";
+import "@fontsource/nunito/800.css";
 
 const style = css`
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,400&display=swap");
-
   body {
     min-height: 100vh;
-    /*  min-height: -webkit-fill-available; */
   }
 
   html {
@@ -17,7 +18,6 @@ const style = css`
     box-sizing: border-box;
     background-color: #f9f9f9;
     min-height: 100vh;
-    /* height: -webkit-fill-available; */
   }
 
   * {
