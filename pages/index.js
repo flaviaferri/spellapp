@@ -2,11 +2,20 @@ import { useState } from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
-import Input from "../components/Input";
-import Output from "../components/Output";
-import Logo from "../components/Logo";
-import Footer from "../components/Footer";
+const Input = dynamic(() => import("../components/Input"), {
+  ssr: false,
+});
+const Output = dynamic(() => import("../components/Output"), {
+  ssr: false,
+});
+const Logo = dynamic(() => import("../components/Logo"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("../components/Logo"), {
+  ssr: false,
+});
 
 const Page = styled.main(
   () => css`
