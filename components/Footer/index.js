@@ -6,7 +6,7 @@ import Label from "../Label";
 import HeartIcon from "../HeartIcon";
 
 const FooterElement = styled.footer(
-  ({ theme }) => css`
+  () => css`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@ const FooterElement = styled.footer(
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    padding: 20rem 3rem 0 3rem;
+    padding: 22rem 3rem 0 3rem;
   `
 );
 
